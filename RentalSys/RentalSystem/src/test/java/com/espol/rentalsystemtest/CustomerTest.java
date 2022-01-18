@@ -44,13 +44,10 @@ public class CustomerTest {
         System.out.println("addMovieRental");
         MovieRental arg = null;
         Customer instance = null;
-        if(!arg.equals(null)){
-            instance.addMovieRental(arg);
-        }
-        else{
-            fail("La Pelicula que se desea ingresar es nula");
-        }
+        instance.addMovieRental(arg);
+        assertNotNull("Prueba pasada",arg);
         // TODO review the generated test code and remove the default call to fail.
+        fail("Pelicula nula no se puedo agregar");
     }
 
     /**
@@ -74,9 +71,7 @@ public class CustomerTest {
     public void testStatement() {
         System.out.println("statement");
         Customer instance = new Customer("Eliott");
-        instance.addMovieRental(new MovieRental(new Movie("Spiderman",10),3));
-        instance.addMovieRental(new MovieRental(new Movie("Titanic",5),2));   
-        String expResult = instance.statement();
+        String expResult = "Rental Record for Eliott\n Amount owed is 0\n You earned 0  frequent renter points";
         String result = instance.statement();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.

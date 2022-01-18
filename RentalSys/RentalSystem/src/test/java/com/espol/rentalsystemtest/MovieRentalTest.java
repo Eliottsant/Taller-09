@@ -14,7 +14,11 @@ import static org.junit.Assert.*;
 
 /**
  *
+<<<<<<< HEAD
  * @author Eliot
+=======
+ * @author rsgar
+>>>>>>> 1a274e19ef95b3aeb15bad0155d1b33d869b4390
  */
 public class MovieRentalTest {
     
@@ -43,10 +47,9 @@ public class MovieRentalTest {
     @Test
     public void testGetDaysRented() {
         System.out.println("getDaysRented");
-        MovieRental instance = null;
-        int expResult = 0;
-        int result = instance.getDaysRented();
-        assertEquals(expResult, result);
+        int rd = (int)Math.random();
+        final MovieRental movieTest = new MovieRental(new Movie("a", 0), rd);
+        assertTrue(movieTest.getDaysRented() == rd);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
@@ -57,10 +60,8 @@ public class MovieRentalTest {
     @Test
     public void testGetMovie() {
         System.out.println("getMovie");
-        MovieRental instance = null;
-        Movie expResult = null;
-        Movie result = instance.getMovie();
-        assertEquals(expResult, result);
+        final MovieRental movieTest = new MovieRental(null, 0);
+        assertTrue(movieTest.getMovie() == null);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }

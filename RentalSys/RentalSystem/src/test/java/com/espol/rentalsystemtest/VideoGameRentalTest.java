@@ -72,7 +72,7 @@ public class VideoGameRentalTest {
     public void testGetCharge() {
         System.out.println("getCharge");
         VideoGameRental instance = new VideoGameRental("Ps3Game",4,true);
-        double expResult = instance.getCharge();
+        double expResult = 139.0;
         double result = instance.getCharge();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.

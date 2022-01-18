@@ -43,8 +43,8 @@ public class MovieTest {
     @Test
     public void testGetPriceCode() {
         System.out.println("getPriceCode");
-        Movie instance = new Movie("Spiderman",23);
-        int expResult = 23;
+        Movie instance = null;
+        int expResult = 0;
         int result = instance.getPriceCode();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
