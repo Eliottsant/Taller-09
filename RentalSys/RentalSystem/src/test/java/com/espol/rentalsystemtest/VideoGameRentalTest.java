@@ -48,7 +48,7 @@ public class VideoGameRentalTest {
         int result = instance.getDaysRented();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("Los días no son iguales.");
+        //fail("Los días no son iguales.");
     }
 
     /**
@@ -62,7 +62,7 @@ public class VideoGameRentalTest {
         Object result = instance.getVideoGame();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("Los videojuegos no son iguales.");
+        //fail("Los videojuegos no son iguales.");
     }
 
     /**
@@ -76,7 +76,7 @@ public class VideoGameRentalTest {
         double result = instance.getCharge();
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
-        fail("Los cargos no son iguales.");
+        //fail("Los cargos no son iguales.");
     }
 
     /**
@@ -90,7 +90,7 @@ public class VideoGameRentalTest {
         int result = instance.getFrequentRenterPoints();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("Los puntos no son iguales.");
+        //fail("Los puntos no son iguales.");
     }
     
 }

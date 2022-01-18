@@ -43,12 +43,12 @@ public class MovieTest {
     @Test
     public void testGetPriceCode() {
         System.out.println("getPriceCode");
-        Movie instance = null;
+        Movie instance = new Movie("Spiderman",10);
         int expResult = 0;
         int result = instance.getPriceCode();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -58,10 +58,10 @@ public class MovieTest {
     public void testSetPriceCode() {
         System.out.println("setPriceCode");
         int arg = 0;
-        Movie instance = null;
+        Movie instance = new Movie("Spiderman",10);
         instance.setPriceCode(arg);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }

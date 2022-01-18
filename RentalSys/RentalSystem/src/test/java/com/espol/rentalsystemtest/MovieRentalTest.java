@@ -51,7 +51,7 @@ public class MovieRentalTest {
         final MovieRental movieTest = new MovieRental(new Movie("a", 0), rd);
         assertTrue(movieTest.getDaysRented() == rd);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -63,7 +63,7 @@ public class MovieRentalTest {
         final MovieRental movieTest = new MovieRental(null, 0);
         assertTrue(movieTest.getMovie() == null);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
